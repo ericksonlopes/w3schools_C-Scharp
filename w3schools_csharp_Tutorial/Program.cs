@@ -4,6 +4,17 @@ namespace w3schools_csharp_Tutorial
 {
     class Program
     {
+        static void comentarios()
+        {
+            // Este é um comentario
+
+            /*
+                Comentario de multiplas linhas
+            */
+
+            // Executando função
+        }
+
         static void variables()
         {
             // string
@@ -70,29 +81,40 @@ namespace w3schools_csharp_Tutorial
             Console.WriteLine(myIntEx);
 
             // Type Conversion Methods
-            int myInt = 10;
-            double myDouble = 5.25;
+            int myIntCon = 10;
+            double myDoubleCon = 5.25;
             bool myBool = true;
-            
-            Console.WriteLine(Convert.ToString(myInt));    // convert int to string
-            Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
-            Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
+
+            Console.WriteLine(Convert.ToString(myIntCon));    // convert int to string
+            Console.WriteLine(Convert.ToDouble(myIntCon));    // convert int to double
+            Console.WriteLine(Convert.ToInt32(myDoubleCon));  // convert double to int
             Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
         }
 
-        static void Main(string[] args)
+        static void userInput()
         {
-            // Console.WriteLine("Hello World!");
-            // Console.WriteLine("Escrever na tela."); 
+            // Get User Input
+            Console.WriteLine("Digite seu nome:");
+            string userName = Console.ReadLine();
 
-            // Este é um comentario
+            Console.WriteLine("Seu nome é: " + userName);
 
-            /*
-                Comentario de multiplas linhas
-            */
+            // Input and Numbers
+            Console.WriteLine("Digite sua idade: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("sua idade é: " + age);
+        }
+        
+        static void Operators()
+        {
+            int x = 100 + 50;
+            x += 5;
+            Console.WriteLine(x);
+        }
 
-            // Executando função
-            typeCasting();
+        static void Main(string[] args)
+        {           
+            Operators();
         }
     }
 }
