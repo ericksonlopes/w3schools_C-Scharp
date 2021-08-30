@@ -136,9 +136,60 @@ namespace w3schools_csharp_Tutorial
             Console.WriteLine(numRound);
         }
 
+        static void varString()
+        {   
+            // Contagem de caracteres
+            string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            Console.WriteLine("Total de caracteres: " + txt.Length);
+
+            // Maiusculo minusculo
+            string name = "Erickson";
+            Console.WriteLine(name.ToUpper());
+            Console.WriteLine(name.ToLower());
+
+            // Concatenação
+            Console.WriteLine(name.ToLower() + " " + name.ToUpper());
+
+            string conc = string.Concat(name.ToLower(), name.ToUpper());
+            Console.WriteLine(conc);
+            
+            // Interpolação
+            string nome = "Erickson";
+            string sobrenome = "Lopes";
+            
+            string completo = $"{nome} {sobrenome}";
+            Console.WriteLine(completo);
+
+            // Acessando indices
+            string myString = "O livro.";
+            Console.WriteLine(myString[0]);
+            Console.WriteLine(myString[7]);
+
+            // Buscando indice por valor
+            Console.WriteLine(myString.IndexOf("."));
+
+            // Extrai os caracteres de uma string até o caractere especificado
+            string NomeCompleto = "Erickson Lopes";
+            int caracPos = NomeCompleto.IndexOf("L");
+
+            string lastName = NomeCompleto.Substring(caracPos);
+
+            Console.WriteLine(lastName);
+
+            // Caracteres Especiais
+            txt = "We are the so-called \"Vikings\" from the north.";
+            txt = "It\'s alright.";
+            txt = "The character \\ is called backslash.";
+
+            Console.WriteLine("Pula\nLinha"); // pula linha
+            Console.WriteLine("Pula\tLinha"); // tab
+            Console.WriteLine("Pula\b Linha"); // Backspac
+ 
+        }
+
         static void Main(string[] args)
         {           
-            MethodMath();
+           varString();
         }
     }
 }
