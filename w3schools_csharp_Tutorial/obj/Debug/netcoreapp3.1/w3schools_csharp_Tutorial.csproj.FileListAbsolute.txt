@@ -1,0 +1,14 @@
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\bin\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.exe
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\bin\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.deps.json
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\bin\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.runtimeconfig.json
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\bin\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.runtimeconfig.dev.json
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\bin\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.dll
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\bin\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.pdb
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.csproj.AssemblyReference.cache
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.AssemblyInfoInputs.cache
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.AssemblyInfo.cs
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.csproj.CoreCompileInputs.cache
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.dll
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.pdb
+C:\Be3\My_Projects\w3schools_csharp_Tutorial\w3schools_csharp_Tutorial\obj\Debug\netcoreapp3.1\w3schools_csharp_Tutorial.genruntimeconfig.cache
