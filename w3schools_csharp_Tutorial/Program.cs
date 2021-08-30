@@ -112,9 +112,33 @@ namespace w3schools_csharp_Tutorial
             Console.WriteLine(x);
         }
 
+        static void MethodMath()
+        {
+            // Calcula o valor maximo
+            int numMax = Math.Max(5, 10);
+
+            Console.WriteLine(numMax);
+
+            // Valor minimo
+            int numMin = Math.Min(5, 10);
+            Console.WriteLine(numMin);
+
+            // Raiz quadrada
+            double numRaiz = Math.Sqrt(64);
+            Console.WriteLine(numRaiz);
+
+            // Valor absoluto
+            double numAbs = Math.Abs(-4.7);
+            Console.WriteLine(numAbs);
+
+            // Arredondado
+            double numRound = Math.Round(9.99);
+            Console.WriteLine(numRound);
+        }
+
         static void Main(string[] args)
         {           
-            Operators();
+            MethodMath();
         }
     }
 }
