@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace w3schools_csharp_Tutorial
 {
@@ -187,9 +188,160 @@ namespace w3schools_csharp_Tutorial
  
         }
 
+        static void varBooleans()
+        {
+            bool isTrue = true;
+            bool isFalse = false;
+
+            Console.WriteLine(isTrue);
+            Console.WriteLine(isFalse);
+
+            //Boolean Expression
+            Console.WriteLine(5 > 1);
+            Console.WriteLine(5 == 5);
+        }
+
+        static void ifElse()
+        {
+            if (20 > 18)
+            {
+                Console.WriteLine("20 é maior que 18.");
+            }
+
+            // The else Statement
+            /*
+            if (10 > 4)
+            {
+                Console.WriteLine("");
+            }
+            else if (false)
+            {
+                Console.WriteLine("");
+            }
+            else
+            {
+                Console.WriteLine("");
+            }
+            */
+            //Short Hand If...Else (Ternary Operator)
+            int time = 18;
+            string result = (time < 18) ? "Bom dia" : "Boa tarde";
+            Console.WriteLine(result);
+        }
+        
+        static void switchStatements()
+        {   
+            int num = 3;
+
+            switch (num)
+            {
+                case 1:
+                    Console.WriteLine("1");
+                    break;
+                case 2:
+                    Console.WriteLine("2");
+                    break;
+                case 3:
+                    Console.WriteLine("3");
+                    break;
+                default:
+                    Console.WriteLine("Esta opção não existe");
+                    break;
+            }
+        }
+
+        static void whileLoop()
+        {
+            int num = 0;
+            while (num < 5)
+            {
+                Console.WriteLine($"{num}");
+                num++;
+            }
+
+            do
+            {
+                Console.WriteLine($"{num}");
+                num++;
+            } while (num < 10);
+        }
+
+        static void forLoop()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            //The foreach Loop
+            string[] carac = {"A", "B", "C"};
+
+            foreach (string item in carac)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        static void arraysCsharp()
+        {
+            string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+            Console.WriteLine(cars[0]);
+
+            // Alterar um elemento Array
+            cars[0] = "Camaro";
+
+            Console.WriteLine(cars[0]);
+
+            // Comprimento da Matriz
+            Console.WriteLine(cars.Length);
+
+            // Loop
+            for (int i = 0; i < cars.Length; i++)
+            {
+                Console.WriteLine(cars[i]);
+            }
+
+            foreach (string item in cars)
+            {
+                Console.WriteLine(item);
+            }
+
+            // Sort Arrays
+            int[] nums = {11, 5, 77, 2};
+
+            Array.Sort(nums);
+
+            foreach (int item in nums)
+            {
+                Console.WriteLine(item);
+            }
+
+            // Namespace System.Linq
+            Console.WriteLine(nums.Max());  // returns the largest value
+            Console.WriteLine(nums.Min());  // returns the smallest value
+            Console.WriteLine(nums.Sum());  // returns the sum of elements
+            
+            /* Outras maneiras de criar uma matriz
+            // Create an array of four elements, and add values later
+            string[] cars = new string[4];
+
+            // Create an array of four elements and add values right away 
+            string[] cars = new string[4] {"Volvo", "BMW", "Ford", "Mazda"};
+
+            // Create an array of four elements without specifying the size 
+            string[] cars = new string[] {"Volvo", "BMW", "Ford", "Mazda"};
+
+            // Create an array of four elements, omitting the new keyword, and without specifying the size
+            string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            */
+
+        }
+
         static void Main(string[] args)
         {           
-           varString();
+           arraysCsharp();
         }
     }
 }
