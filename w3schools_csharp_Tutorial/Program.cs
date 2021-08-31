@@ -5,7 +5,7 @@ namespace w3schools_csharp_Tutorial
 {
     class Program
     {
-        static void comentarios()
+        static void Comentarios()
         {
             // Este é um comentario
 
@@ -16,7 +16,7 @@ namespace w3schools_csharp_Tutorial
             // Executando função
         }
 
-        static void variables()
+        static void Variables()
         {
             // string
             string name = "John";
@@ -53,7 +53,7 @@ namespace w3schools_csharp_Tutorial
             int x1 = 5, y2 = 6, z3 = 50;
             Console.WriteLine(x1 + y2 + z3);
         }
-        
+
         /*
         static void dataTypes()
         {
@@ -65,7 +65,7 @@ namespace w3schools_csharp_Tutorial
         }
         */
 
-        static void typeCasting()
+        static void TypeCasting()
         {
             // Implicit Casting
             int myInt = 9;
@@ -76,7 +76,7 @@ namespace w3schools_csharp_Tutorial
 
             // Explicit Casting
             double myDoubleEx = 9.78;
-            int myIntEx = (int) myDoubleEx;
+            int myIntEx = (int)myDoubleEx;
 
             Console.WriteLine(myDoubleEx);
             Console.WriteLine(myIntEx);
@@ -92,7 +92,7 @@ namespace w3schools_csharp_Tutorial
             Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
         }
 
-        static void userInput()
+        static void UserInput()
         {
             // Get User Input
             Console.WriteLine("Digite seu nome:");
@@ -105,7 +105,7 @@ namespace w3schools_csharp_Tutorial
             int age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("sua idade é: " + age);
         }
-        
+
         static void Operators()
         {
             int x = 100 + 50;
@@ -137,8 +137,8 @@ namespace w3schools_csharp_Tutorial
             Console.WriteLine(numRound);
         }
 
-        static void varString()
-        {   
+        static void VarString()
+        {
             // Contagem de caracteres
             string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             Console.WriteLine("Total de caracteres: " + txt.Length);
@@ -153,11 +153,11 @@ namespace w3schools_csharp_Tutorial
 
             string conc = string.Concat(name.ToLower(), name.ToUpper());
             Console.WriteLine(conc);
-            
+
             // Interpolação
             string nome = "Erickson";
             string sobrenome = "Lopes";
-            
+
             string completo = $"{nome} {sobrenome}";
             Console.WriteLine(completo);
 
@@ -185,7 +185,7 @@ namespace w3schools_csharp_Tutorial
             Console.WriteLine("Pula\nLinha"); // pula linha
             Console.WriteLine("Pula\tLinha"); // tab
             Console.WriteLine("Pula\b Linha"); // Backspac
- 
+
         }
 
         static void varBooleans()
@@ -228,29 +228,37 @@ namespace w3schools_csharp_Tutorial
             string result = (time < 18) ? "Bom dia" : "Boa tarde";
             Console.WriteLine(result);
         }
-        
-        static void switchStatements()
-        {   
+
+        static void SwitchStatements()
+        {
             int num = 3;
 
             switch (num)
             {
                 case 1:
-                    Console.WriteLine("1");
-                    break;
+                    {
+                        Console.WriteLine("1");
+                        break;
+                    }
                 case 2:
-                    Console.WriteLine("2");
-                    break;
+                    {
+                        Console.WriteLine("2");
+                        break;
+                    }
                 case 3:
-                    Console.WriteLine("3");
-                    break;
+                    {
+                        Console.WriteLine("3");
+                        break;
+                    }
                 default:
-                    Console.WriteLine("Esta opção não existe");
-                    break;
+                    {
+                        Console.WriteLine("Esta opção não existe");
+                        break;
+                    }
             }
         }
 
-        static void whileLoop()
+        static void WhileLoop()
         {
             int num = 0;
             while (num < 5)
@@ -266,7 +274,7 @@ namespace w3schools_csharp_Tutorial
             } while (num < 10);
         }
 
-        static void forLoop()
+        static void ForLoop()
         {
             for (int i = 0; i < 5; i++)
             {
@@ -275,7 +283,7 @@ namespace w3schools_csharp_Tutorial
 
 
             //The foreach Loop
-            string[] carac = {"A", "B", "C"};
+            string[] carac = { "A", "B", "C" };
 
             foreach (string item in carac)
             {
@@ -283,9 +291,9 @@ namespace w3schools_csharp_Tutorial
             }
         }
 
-        static void arraysCsharp()
+        static void ArraysCsharp()
         {
-            string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
 
             Console.WriteLine(cars[0]);
 
@@ -309,11 +317,11 @@ namespace w3schools_csharp_Tutorial
             }
 
             // Sort Arrays
-            int[] nums = {11, 5, 77, 2};
+            int[] nums = { 11, 5, 77, 2 };
 
             Array.Sort(nums);
 
-            foreach (int item in nums)
+            foreach (var item in nums)
             {
                 Console.WriteLine(item);
             }
@@ -322,7 +330,7 @@ namespace w3schools_csharp_Tutorial
             Console.WriteLine(nums.Max());  // returns the largest value
             Console.WriteLine(nums.Min());  // returns the smallest value
             Console.WriteLine(nums.Sum());  // returns the sum of elements
-            
+
             /* Outras maneiras de criar uma matriz
             // Create an array of four elements, and add values later
             string[] cars = new string[4];
@@ -338,10 +346,40 @@ namespace w3schools_csharp_Tutorial
             */
 
         }
+        static void MeuMetodo()
+        {
+            Console.WriteLine("Olá mundo");
+        }
+        // Parametros
+        static void MeuMetodoPar(string nome)
+        {
+            Console.WriteLine("Olá mundo" + nome);
+        }
+        // Multiplos parametros
+        static void MeuMetodoMultPara(string nome, int idade)
+        {
+            Console.WriteLine("Olá mundo " + nome + " Tem " + idade + " anos");
+        }
 
-        static void Main(string[] args)
-        {           
-           arraysCsharp();
+        // Valores Retornados
+        static string MetodoRetorno(string nome)
+        {
+            return "Seu nome é:" + nome;
+        }
+
+        // Argumentos Nomeados
+        static void MetodoNomeado(string nome1, string nome2, string nome3)
+        {
+            Console.WriteLine("Exibir nome" + nome1);
+        }
+        // Argumentos Nomeados e Padrão
+        static void MetodoNomeadoPadrao(string nome1 = "", string nome2 = "", string nome3 = "")
+        {
+            Console.WriteLine("Exibir nome" + nome1);
+        }
+        private static void Main(string[] args)
+        {
+             
         }
     }
 }
