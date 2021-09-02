@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.IO;  // include the System.IO namespace
 
 namespace w3schools_csharp_Tutorial
 {
@@ -346,40 +347,40 @@ namespace w3schools_csharp_Tutorial
             */
 
         }
-        static void MeuMetodo()
-        {
-            Console.WriteLine("Olá mundo");
-        }
-        // Parametros
-        static void MeuMetodoPar(string nome)
-        {
-            Console.WriteLine("Olá mundo" + nome);
-        }
-        // Multiplos parametros
-        static void MeuMetodoMultPara(string nome, int idade)
-        {
-            Console.WriteLine("Olá mundo " + nome + " Tem " + idade + " anos");
-        }
 
-        // Valores Retornados
-        static string MetodoRetorno(string nome)
+        static void Arquivo()
         {
-            return "Seu nome é:" + nome;
-        }
+            string writeText = "print(\"Olá mundo\")";  // Create a text string
+            File.WriteAllText("file.py", writeText);  // Create a file and write the content of writeText to it
 
-        // Argumentos Nomeados
-        static void MetodoNomeado(string nome1, string nome2, string nome3)
-        {
-            Console.WriteLine("Exibir nome" + nome1);
-        }
-        // Argumentos Nomeados e Padrão
-        static void MetodoNomeadoPadrao(string nome1 = "", string nome2 = "", string nome3 = "")
-        {
-            Console.WriteLine("Exibir nome" + nome1);
+            string readText = File.ReadAllText("file.py");  // Read the contents of the file
+            Console.WriteLine(readText);  // Output the content
         }
         private static void Main(string[] args)
         {
-                       
+            //try
+            //{
+            //    int[] myNumbers = { 1, 2, 3 };
+            //    Console.WriteLine(myNumbers[10]);
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("The 'try catch' is finished.");
+            //}
+            int age = 1;
+            if (age < 18)
+            {
+                throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+            }
+            else
+            {
+                Console.WriteLine("Access granted - You are old enough!");
+            }
         }
+
     }
 }
